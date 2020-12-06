@@ -102,6 +102,7 @@ inline bool DirectoryExists(const std::string& dirName_in)
         return S_ISDIR(sb.st_mode) && access(dirName_in.c_str(), F_OK);
     }
 #endif
+    return true; // hack
     return false;    // this is not a directory! } {
 }
 

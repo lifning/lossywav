@@ -1,6 +1,6 @@
 OBJS=$(shell find $(CURDIR) -name \*.cpp | sed 's/.cpp$$/.o/')
 CXX=clang++
-CFLAGS=-O2
+CXXFLAGS=-O2
 
 all: lossyWAV
 

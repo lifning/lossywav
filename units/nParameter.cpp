@@ -1925,10 +1925,12 @@ void nParameter_Init(int32_t argc, char* argv[])
             parameters.lwcdfName = parameters.wavName.substr(0, sa_i) + "lwcdf." + parameters.wavName.substr(sa_i, parameters.wavName.length() - sa_i);
         }
 
+        /* hack
         if ((parameters.WavOutDir != "") && (DirectoryExists(parameters.WavOutDir) == false))
         {
             lossyWAVError("Directory : " + parameters.WavOutDir + " cannot be accessed.", 0x31);
         }
+        */
     }
 
     if (!parameters.merging)
