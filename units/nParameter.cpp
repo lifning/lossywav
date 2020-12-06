@@ -937,9 +937,9 @@ bool check_parameter()
 
         parameters.WavOutDir = current_parameter;
 
-        if (!((parameters.WavOutDir[parameters.WavOutDir.length()] == '\\') || (parameters.WavOutDir[parameters.WavOutDir.length()] == ':')))
+        if (!((parameters.WavOutDir[parameters.WavOutDir.length()] == '/') || (parameters.WavOutDir[parameters.WavOutDir.length()] == ':')))
         {
-            parameters.WavOutDir = parameters.WavOutDir + '\\';
+            parameters.WavOutDir = parameters.WavOutDir + '/';
         }
 
         return true;
