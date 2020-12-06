@@ -2071,7 +2071,7 @@ bool openWavIO()
         Global.WAVE_size = RIFF.WAVE.Chunks.DS64.RIFFSize;
     }
 
-    if (Global.sample_rate < 22050)
+    if (Global.sample_rate < 22050/4) // hack
     {
         std::cerr << "Sample Rate too low : " << floattostrf(Global.sample_rate * OneOver[1000], 2) << "kHz (Min=22.05kHz).\n";
         wavIOExitProc("This is not supported.", 0x12);
