@@ -229,7 +229,7 @@ void Remove_Bits_Proc_Shaping_Off()
 //=============================================================================================================================
 void Remove_Bits()
 {//============================================================================================================================
-    process.Channel_Data[Global.Channel].bits_removed = 7; // hack //process.Channel_Data[Global.Channel].bits_to_remove;
+    process.Channel_Data[Global.Channel].bits_removed = 8; // hack //process.Channel_Data[Global.Channel].bits_to_remove;
 
     process.Channel_Data[Global.Channel].Total.eclip = 0;
     process.Channel_Data[Global.Channel].Total.sclip = 0;
